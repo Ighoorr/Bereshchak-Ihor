@@ -1,0 +1,79 @@
+*
+{
+    margin: 0px;
+}
+
+main
+{
+    color: antiquewhite;
+    margin:0px;
+    width:100vw;
+    height:92vh;
+    display: grid;
+grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "t t "
+                            "b1 b1"
+                             "b2 b2"
+                             "b2 b2"
+                            "b3 b3 "
+                            "b3 b3 ";
+}
+#MainBlock
+{
+    grid-area:t;
+    background-color: rgb(241, 213, 54);
+}
+header
+{  
+    position: -webkit-sticky;
+  
+    top: 0px;
+    height:9vh;
+    background-color:rgb(175, 118, 47);
+    opacity: .7;
+}
+
+
+@media screen and (min-width: 720px)
+{
+    main
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-template-areas: "t b1 b1 b1"
+                             "b2 b2 b2  b2"
+                            "b3 b3 b3 b3";
+                           
+    }
+}
+
+#logo-photo
+{
+    height: 100%;
+  margin-left: 0.3vh;
+    float:initial;
+    
+}
+
+#menuLogo
+{
+    float: left;
+    height:100%;
+}
+
+#smallBlock1
+{
+    grid-area: b1;
+    background-color:rgb(64, 162, 207);
+}
+#smallBlock2
+{
+    grid-area: b2;
+    background-color:rgb(92, 72, 207);
+}
+#smallBlock3
+{
+    grid-area: b3;
+    background-color:rgb(15, 201, 70);
+}
